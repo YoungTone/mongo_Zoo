@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Zoos</h1>
+    <p>
+
+      <form action="/zoos/<%= zoo._id%>?_method=put" method="POST">
+      <div>
+         <label for="name">Name:</label>
+         <input autofocus type="text" name="name" id="title" value = <%= zoo.name%>>
+       </div>
+       <div>
+          <label for="location">Location: </label>
+          <input autofocus type="text" name="location" id="title" value = <%= zoo.location%>>
+        </div>
+       <div>
+         <input type="submit" value="Update">
+       </div>
+      </form>
+    </p>
+</body>
+</html>

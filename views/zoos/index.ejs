@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Zoo Listing</h1>
+  <% zoos.forEach(function(zoo){ %>
+    <p>
+      <a href="/zoos/<%= zoo._id%>"><%= zoo.name%> <%= zoo.location%></a>
+    </p>
+  <% })%>
+  <a href="/zoos/new">Add a Zoo</a>
+  
+</body>
+</html>
